@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply text-[62.5%];
+}
+
+.navContainer {
+  @apply mx-16 w-full;
+}
