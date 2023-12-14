@@ -7,5 +7,8 @@ html {
 }
 
 .navContainer {
-  @apply mx-16 w-full;
+  @apply mx-5 md:mx-14 w-full;
+}
+body {
+  @apply sm:overflow-hidden;
 }

@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        md: "720px",
+        sm: "800px",
+        md: "1050px",
       },
       backgroundImage: {},
       container: {
@@ -22,7 +23,10 @@ export default {
       colors: {
         accent: {
           100: "#BEBEBE",
-          200: "#3C3C3C",
+          150: "#f7f7f7",
+          200: "#f8f8f8",
+          250: "#e3e3e3",
+          280: "#848484",
           300: "#222",
         },
         primary: {
