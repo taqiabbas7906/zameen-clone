@@ -8,7 +8,7 @@ import  {useState}  from "react"
 const SecondNav = () => {
 const [secondNavDropDown, setSecondNavDropDown] = useState(true)
   return (
-    <nav className="secondNav flex items-center bg-accent-150 h-16">
+    <nav className="hidden secondNav sm:flex items-center bg-accent-150 h-16">
         <div className="navContainer flex items-center">
         <img src={logo} alt="zameen" className="h-[2.7rem]" />
         <ul className="flex font-primary text-accent-280 text-[1.4rem] uppercase relative font-medium">
