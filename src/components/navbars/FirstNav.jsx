@@ -34,7 +34,7 @@ const DropDown = (props) => {
         />
       </span>
       <ul
-        className={`absolute white rounded-[0.5rem] bg-white shadow-dropdown text-black top-[3.2rem] text-left py-[1rem]  right-0 font-medium capitalize ${
+        className={`absolute white rounded-[0.5rem] z-50 bg-white shadow-dropdown text-black top-[3.2rem] text-left py-[1rem]  right-0 font-medium capitalize ${
           dropDown ? "block" : "hidden"
         }`}
       >
@@ -42,7 +42,7 @@ const DropDown = (props) => {
           return (
             <li
               key={item.name}
-              className=" text-accent-300 md:hover:underline w-[15rem] my-[1rem] mx-[1rem]"
+              className=" text-accent-300 md:hover:underline w-[15rem] text-[1.4rem] my-[1rem] mx-[1rem]"
             >
               <Link to={item.to}>{item.name}</Link>
             </li>
@@ -60,12 +60,12 @@ const FirstNav = () => {
     countries[0].name
   );
   return (
-    <nav className="firstNav flex items-center bg-primary-300 h-16">
+    <nav className="firstNav hidden sm:flex items-center bg-primary-300 h-16">
       <div className="navContainer flex justify-between">
         <div className="leftNav  flex items-center">
           <div className="homeBtn">
             <Link to="/">
-              <img className="w-9" src={house} alt="home" />
+              <img className="w-[20px]" src={house} alt="home" />
             </Link>
           </div>
           <ul className="flex font-primary cursor-pointer text-white uppercase font-semibold md:text-[1.4rem] text-[1.1rem] break-normal">
@@ -108,12 +108,12 @@ const FirstNav = () => {
             className="w-[4.2rem] invert  cursor-pointer"
             alt=""
           />
-          <div className="countrySelector relative cursor-pointer">
+          <div title={currentCountryName} className="countrySelector relative cursor-pointer">
             <img
               onClick={() => {
                 setFlagDropDown(!flagDropDown);
               }}
-              className="w-[2.1rem]"
+              className="w-[21px]"
               src={currentCountry}
               alt={currentCountryName}
             />

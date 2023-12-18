@@ -8,10 +8,10 @@ import  {useState}  from "react"
 const SecondNav = () => {
 const [secondNavDropDown, setSecondNavDropDown] = useState(true)
   return (
-    <nav className="secondNav flex items-center bg-accent-150 h-16">
+    <nav className="secondNav items-center hidden sm:flex  bg-accent-150 h-16">
         <div className="navContainer flex items-center">
         <img src={logo} alt="zameen" className="h-[2.7rem]" />
-        <ul className="flex font-primary text-accent-280 text-[1.4rem] uppercase relative font-medium">
+        <ul className="flex font-primary text-accent-280 md:text-[1.4rem] text-[1.1rem] uppercase relative font-medium">
             {secondNav.map((item)=>{
                 if(item.more == true){
                     return(
@@ -30,7 +30,7 @@ const [secondNavDropDown, setSecondNavDropDown] = useState(true)
                     )
                 }
             })}
-        <ul className={`flex font-primary  w-[30rem] bg-accent-150 text-accent-280 text-[1.4rem] uppercase font-medium absolute transition-all duration-300 ${secondNavDropDown?"left-[6.5rem]":"left-[34rem]"}`}>
+        <ul className={`flex font-primary  w-[30rem] bg-accent-150 md:text-[1.4rem] text-[1.1rem] text-accent-280  uppercase font-medium absolute transition-all duration-300 ${secondNavDropDown?"left-[6.5rem]":"left-[28rem] md:left-[34rem]"}`}>
             {secondNav.map((item)=>{
                 if(item.more==false){
                         return(
