@@ -122,12 +122,12 @@ const FirstNav = () => {
                 flagDropDown ? "" : "hidden"
               }`}
             >
-              {countries.map((item) => {
+              {countries.map((item, index) => {
                 if (item.name == currentCountryName) {
                   return;
                 } else {
                   return (
-                    <li
+                    <li key={index}
                       onClick={() => {
                         setCurrentCountry(item.flag);
                         setCurrentCountryName(item.name);

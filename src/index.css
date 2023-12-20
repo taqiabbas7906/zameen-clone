@@ -7,8 +7,17 @@ html {
 }
 
 .navContainer {
-  @apply mx-5 md:mx-14 w-full;
+  @apply sm:mx-5 md:mx-14 w-full mx-0;
 }
 body {
   @apply sm:overflow-hidden;
+}
+.mobileNavItem {
+  @apply h-[5rem] flex justify-between items-center border-b-[0.1rem] border-accent-320 px-[2rem];
+}
+.mobileNavItem.active {
+  @apply border-l-[0.5rem] border-l-primary-300 text-white;
+}
+body {
+  @apply bg-red-400;
 }
