@@ -30,7 +30,7 @@ const [secondNavDropDown, setSecondNavDropDown] = useState(true)
                     )
                 }
             })}
-        <ul className={`flex font-primary  w-[30rem] bg-accent-150 md:text-[1.4rem] text-[1.1rem] text-accent-280  uppercase font-medium absolute transition-all duration-300 ${secondNavDropDown?"left-[6.5rem]":"left-[28rem] md:left-[34rem]"}`}>
+        <ul className={`flex font-primary  w-[40vw] bg-accent-150 md:text-[1.4rem] text-[1.1rem] text-accent-280  uppercase font-medium absolute transition-all duration-300 ${secondNavDropDown?"left-[6.5rem]":"left-[28rem] md:left-[34rem]"}`}>
             {secondNav.map((item, index)=>{
                 if(item.more==false){
                         return(

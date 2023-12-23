@@ -7,7 +7,9 @@ export default {
         sm: "800px",
         md: "1050px",
       },
-      backgroundImage: {},
+      backgroundImage: {
+        hero: "url('./src/assets/heroBackground.webp')",
+      },
       container: {
         center: true,
         screens: {
@@ -16,6 +18,9 @@ export default {
           lg: "1080px",
           xl: "1180px",
         },
+      },
+      backgroundPosition: {
+        "bottom-4": "center top -35rem",
       },
       boxShadow: {
         dropdown: "0.3rem 0.3rem 0.6rem 0 rgba(0,0,0,.1)",

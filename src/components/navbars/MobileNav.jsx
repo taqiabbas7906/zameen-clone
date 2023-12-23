@@ -12,7 +12,7 @@ const MobileNav = () => {
   const { value, setValue } = useContext(NavContext);
   return (
     <div
-      className={`absolute w-[28rem] sm:hidden transition-all duration-500   ${value ? "left-0" : "-left-[24rem]"
+      className={`absolute z-99 w-[28rem] sm:hidden transition-all duration-500   ${value ? "left-0" : "-left-[24rem]"
         }`}
     >
       <nav className="bg-accent-300 text-[1.5rem] overflow-x-hidden overflow-scroll uppercase text-accent-220 w-[24rem] sm:hidden h-full fixed">

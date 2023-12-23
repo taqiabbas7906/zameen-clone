@@ -18,6 +18,3 @@ body {
 .mobileNavItem.active {
   @apply border-l-[0.5rem] border-l-primary-300 text-white;
 }
-body {
-  @apply bg-red-400;
-}
